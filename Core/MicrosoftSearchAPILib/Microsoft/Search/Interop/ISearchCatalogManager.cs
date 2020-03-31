@@ -4,7 +4,7 @@
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
 
-    [ComImport, Guid("AB310581-AC80-11D1-8DF3-00C04FB6EF50"), ComConversionLoss, InterfaceType((short) 1)]
+      [ComImport, Guid("AB310581-AC80-11D1-8DF3-00C04FB6EF50"), ComConversionLoss, InterfaceType((short) 1)]
     public interface ISearchCatalogManager
     {
         [DispId(0x60010000)]

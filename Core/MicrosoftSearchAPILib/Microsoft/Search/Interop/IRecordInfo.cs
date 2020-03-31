@@ -3,7 +3,6 @@
     using System;
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
-    using System.Runtime.InteropServices.CustomMarshalers;
 
     [ComImport, Guid("0000002F-0000-0000-C000-000000000046"), InterfaceType((short) 1)]
     public interface IRecordInfo
@@ -20,8 +19,6 @@
         void GetName([MarshalAs(UnmanagedType.BStr)] out string pbstrName);
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]
         void GetSize(out uint pcbSize);
-        [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]
-        void GetTypeInfo([MarshalAs(UnmanagedType.CustomMarshaler, MarshalType="", MarshalTypeRef=typeof(TypeToTypeInfoMarshaler), MarshalCookie="")] out Type ppTypeInfo);
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]
         void GetField([In] IntPtr pvData, [In, MarshalAs(UnmanagedType.LPWStr)] string szFieldName, [MarshalAs(UnmanagedType.Struct)] out object pvarField);
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]

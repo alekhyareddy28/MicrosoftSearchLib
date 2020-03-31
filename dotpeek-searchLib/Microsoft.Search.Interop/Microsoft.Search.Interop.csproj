@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\Microsoft.Search DLL\Microsoft.Search.Interop.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3512CDD-8EAA-4BB7-8750-665E4B5209D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.Search.Interop</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Search.Interop</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CSearchManagerClass.cs" />
+    <Compile Include="CSearchManager.cs" />
+    <Compile Include="ISearchManager.cs" />
+    <Compile Include="tag_inner_PROPVARIANT.cs" />
+    <Compile Include="__MIDL___MIDL_itf_searchapi_0001_0129_0001.cs" />
+    <Compile Include="_LARGE_INTEGER.cs" />
+    <Compile Include="_ULARGE_INTEGER.cs" />
+    <Compile Include="_FILETIME.cs" />
+    <Compile Include="tagCLIPDATA.cs" />
+    <Compile Include="tagBSTRBLOB.cs" />
+    <Compile Include="tagBLOB.cs" />
+    <Compile Include="IStream.cs" />
+    <Compile Include="ISequentialStream.cs" />
+    <Compile Include="tagSTATSTG.cs" />
+    <Compile Include="IStorage.cs" />
+    <Compile Include="tagRemSNB.cs" />
+    <Compile Include="IEnumSTATSTG.cs" />
+    <Compile Include="tagVersionedStream.cs" />
+    <Compile Include="_wireSAFEARRAY.cs" />
+    <Compile Include="_wireSAFEARRAY_UNION.cs" />
+    <Compile Include="__MIDL_IOleAutomationTypes_0001.cs" />
+    <Compile Include="_wireSAFEARR_BSTR.cs" />
+    <Compile Include="_FLAGGED_WORD_BLOB.cs" />
+    <Compile Include="_wireSAFEARR_UNKNOWN.cs" />
+    <Compile Include="_wireSAFEARR_DISPATCH.cs" />
+    <Compile Include="_wireSAFEARR_VARIANT.cs" />
+    <Compile Include="_wireVARIANT.cs" />
+    <Compile Include="__MIDL_IOleAutomationTypes_0004.cs" />
+    <Compile Include="_wireBRECORD.cs" />
+    <Compile Include="IRecordInfo.cs" />
+    <Compile Include="ITypeInfo.cs" />
+    <Compile Include="tagTYPEATTR.cs" />
+    <Compile Include="tagTYPEKIND.cs" />
+    <Compile Include="tagTYPEDESC.cs" />
+    <Compile Include="__MIDL_IOleAutomationTypes_0005.cs" />
+    <Compile Include="tagARRAYDESC.cs" />
+    <Compile Include="tagSAFEARRAYBOUND.cs" />
+    <Compile Include="tagIDLDESC.cs" />
+    <Compile Include="ITypeComp.cs" />
+    <Compile Include="tagDESCKIND.cs" />
+    <Compile Include="tagFUNCDESC.cs" />
+    <Compile Include="tagELEMDESC.cs" />
+    <Compile Include="tagPARAMDESC.cs" />
+    <Compile Include="tagPARAMDESCEX.cs" />
+    <Compile Include="tagFUNCKIND.cs" />
+    <Compile Include="tagINVOKEKIND.cs" />
+    <Compile Include="tagCALLCONV.cs" />
+    <Compile Include="tagVARDESC.cs" />
+    <Compile Include="__MIDL_IOleAutomationTypes_0006.cs" />
+    <Compile Include="tagVARKIND.cs" />
+    <Compile Include="ITypeLib.cs" />
+    <Compile Include="tagTLIBATTR.cs" />
+    <Compile Include="tagSYSKIND.cs" />
+    <Compile Include="_wireSAFEARR_BRECORD.cs" />
+    <Compile Include="_wireSAFEARR_HAVEIID.cs" />
+    <Compile Include="_BYTE_SIZEDARR.cs" />
+    <Compile Include="_SHORT_SIZEDARR.cs" />
+    <Compile Include="_LONG_SIZEDARR.cs" />
+    <Compile Include="_HYPER_SIZEDARR.cs" />
+    <Compile Include="tagCAC.cs" />
+    <Compile Include="tagCAUB.cs" />
+    <Compile Include="tagCAI.cs" />
+    <Compile Include="tagCAUI.cs" />
+    <Compile Include="tagCAL.cs" />
+    <Compile Include="tagCAUL.cs" />
+    <Compile Include="tagCAH.cs" />
+    <Compile Include="tagCAUH.cs" />
+    <Compile Include="tagCAFLT.cs" />
+    <Compile Include="tagCADBL.cs" />
+    <Compile Include="tagCABOOL.cs" />
+    <Compile Include="tagCASCODE.cs" />
+    <Compile Include="tagCACY.cs" />
+    <Compile Include="tagCADATE.cs" />
+    <Compile Include="tagCAFILETIME.cs" />
+    <Compile Include="tagCACLSID.cs" />
+    <Compile Include="tagCACLIPDATA.cs" />
+    <Compile Include="tagCABSTR.cs" />
+    <Compile Include="tagCABSTRBLOB.cs" />
+    <Compile Include="tagCALPSTR.cs" />
+    <Compile Include="tagCALPWSTR.cs" />
+    <Compile Include="tagCAPROPVARIANT.cs" />
+    <Compile Include="_PROXY_ACCESS.cs" />
+    <Compile Include="ISearchCatalogManager.cs" />
+    <Compile Include="_CatalogStatus.cs" />
+    <Compile Include="_CatalogPausedReason.cs" />
+    <Compile Include="ISearchPersistentItemsChangedSink.cs" />
+    <Compile Include="_SEARCH_ITEM_PERSISTENT_CHANGE.cs" />
+    <Compile Include="_SEARCH_KIND_OF_CHANGE.cs" />
+    <Compile Include="_SEARCH_NOTIFICATION_PRIORITY.cs" />
+    <Compile Include="ISearchViewChangedSink.cs" />
+    <Compile Include="_SEARCH_ITEM_CHANGE.cs" />
+    <Compile Include="ISearchNotifyInlineSite.cs" />
+    <Compile Include="_SEARCH_INDEXING_PHASE.cs" />
+    <Compile Include="_SEARCH_ITEM_INDEXING_STATUS.cs" />
+    <Compile Include="IEnumString.cs" />
+    <Compile Include="ISearchQueryHelper.cs" />
+    <Compile Include="_SEARCH_TERM_EXPANSION.cs" />
+    <Compile Include="_SEARCH_QUERY_SYNTAX.cs" />
+    <Compile Include="_tagpropertykey.cs" />
+    <Compile Include="_SEARCH_COLUMN_PROPERTIES.cs" />
+    <Compile Include="ISearchCrawlScopeManager.cs" />
+    <Compile Include="ISearchRoot.cs" />
+    <Compile Include="_AUTH_TYPE.cs" />
+    <Compile Include="IEnumSearchRoots.cs" />
+    <Compile Include="IEnumSearchScopeRules.cs" />
+    <Compile Include="ISearchScopeRule.cs" />
+    <Compile Include="CLUSION_REASON.cs" />
+    <Compile Include="__MIDL___MIDL_itf_searchapi_0000_0012_0001.cs" />
+    <Compile Include="CSearchCatalogManagerClass.cs" />
+    <Compile Include="CSearchCatalogManager.cs" />
+    <Compile Include="CSearchQueryHelperClass.cs" />
+    <Compile Include="CSearchQueryHelper.cs" />
+    <Compile Include="CSearchItemsChangedSinkClass.cs" />
+    <Compile Include="CSearchItemsChangedSink.cs" />
+    <Compile Include="ISearchItemsChangedSink.cs" />
+    <Compile Include="CSearchCrawlScopeManagerClass.cs" />
+    <Compile Include="CSearchCrawlScopeManager.cs" />
+    <Compile Include="CEnumSearchRootsClass.cs" />
+    <Compile Include="CEnumSearchRoots.cs" />
+    <Compile Include="CEnumSearchScopeRulesClass.cs" />
+    <Compile Include="CEnumSearchScopeRules.cs" />
+    <Compile Include="CSearchRootClass.cs" />
+    <Compile Include="CSearchRoot.cs" />
+    <Compile Include="CSearchScopeRuleClass.cs" />
+    <Compile Include="CSearchScopeRule.cs" />
+    <Compile Include="CSearchPersistentItemsChangedSinkClass.cs" />
+    <Compile Include="CSearchPersistentItemsChangedSink.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

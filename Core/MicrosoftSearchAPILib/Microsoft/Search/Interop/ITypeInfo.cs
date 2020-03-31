@@ -3,7 +3,6 @@
     using System;
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
-    using System.Runtime.InteropServices.CustomMarshalers;
 
     [ComImport, ComConversionLoss, Guid("00020401-0000-0000-C000-000000000046"), InterfaceType((short) 1)]
     public interface ITypeInfo
@@ -30,8 +29,6 @@
         void RemoteGetDocumentation([In] int memid, [In] uint refPtrFlags, [MarshalAs(UnmanagedType.BStr)] out string pbstrName, [MarshalAs(UnmanagedType.BStr)] out string pBstrDocString, out uint pdwHelpContext, [MarshalAs(UnmanagedType.BStr)] out string pBstrHelpFile);
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]
         void RemoteGetDllEntry([In] int memid, [In] tagINVOKEKIND invkind, [In] uint refPtrFlags, [MarshalAs(UnmanagedType.BStr)] out string pBstrDllName, [MarshalAs(UnmanagedType.BStr)] out string pbstrName, out ushort pwOrdinal);
-        [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]
-        void GetRefTypeInfo([In] uint hreftype, [MarshalAs(UnmanagedType.CustomMarshaler, MarshalType="", MarshalTypeRef=typeof(TypeToTypeInfoMarshaler), MarshalCookie="")] out Type ppTInfo);
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]
         void LocalAddressOfMember();
         [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)]
