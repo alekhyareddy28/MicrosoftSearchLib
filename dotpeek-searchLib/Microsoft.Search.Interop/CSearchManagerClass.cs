@@ -12,9 +12,8 @@ namespace Microsoft.Search.Interop
 {
   [Guid("7D096C5F-AC08-4F1F-BEB7-5C22C517CE39")]
   [TypeLibType(2)]
-  [ClassInterface(0)]
+  [ClassInterface((ClassInterfaceType)0)]
   [ComConversionLoss]
-  [ComImport]
   public class CSearchManagerClass : ISearchManager, CSearchManager
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

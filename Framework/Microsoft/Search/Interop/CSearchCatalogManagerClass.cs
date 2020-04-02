@@ -4,7 +4,7 @@
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
 
-    [ComImport, ComConversionLoss, Guid("AAB49DD5-AD0B-40AE-B654-AE8976BF6BD2"), ClassInterface((short) 0)]
+    [ComConversionLoss, Guid("AAB49DD5-AD0B-40AE-B654-AE8976BF6BD2"), ClassInterface((short) 0)]
     public class CSearchCatalogManagerClass : ISearchCatalogManager, CSearchCatalogManager
     {
         [return: MarshalAs(UnmanagedType.Interface)]
@@ -74,6 +74,8 @@
 
         [DispId(0x60010017)]
         extern int Microsoft.Search.Interop.ISearchCatalogManager.DiacriticSensitivity { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] get; [param: In] [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] set; }
+
+        public extern CSearchCatalogManagerClass();
     }
 }
 

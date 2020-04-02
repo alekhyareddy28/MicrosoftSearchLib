@@ -10,8 +10,8 @@ using System.Runtime.InteropServices;
 namespace Microsoft.Search.Interop
 {
   [Guid("3379F9F7-F805-4827-9CF6-03DB41F297DA")]
-  [ClassInterface(0)]
-  [ComImport]
+  [ClassInterface((ClassInterfaceType)0)]
+
   public class CEnumSearchScopeRulesClass : IEnumSearchScopeRules, CEnumSearchScopeRules
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

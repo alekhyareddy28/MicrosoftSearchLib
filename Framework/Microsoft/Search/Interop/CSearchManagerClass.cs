@@ -4,7 +4,7 @@
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
 
-    [ComImport, Guid("7D096C5F-AC08-4F1F-BEB7-5C22C517CE39"), TypeLibType((short) 2), ClassInterface((short) 0), ComConversionLoss]
+    [Guid("7D096C5F-AC08-4F1F-BEB7-5C22C517CE39"), TypeLibType((short) 2), ClassInterface((short) 0), ComConversionLoss]
     public class CSearchManagerClass : ISearchManager, CSearchManager
     {
         [return: MarshalAs(UnmanagedType.Interface)]
@@ -39,7 +39,7 @@
         [DispId(0x6001000c)]
         public virtual extern uint PortNumber { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] get; }
 
-        [DispId(0x60010004)]
+/*        [DispId(0x60010004)]
         extern string Microsoft.Search.Interop.ISearchManager.ProxyName { [return: MarshalAs(UnmanagedType.LPWStr)] [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] get; }
 
         [DispId(0x60010005)]
@@ -55,7 +55,9 @@
         extern int Microsoft.Search.Interop.ISearchManager.LocalBypass { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] get; }
 
         [DispId(0x6001000c)]
-        extern uint Microsoft.Search.Interop.ISearchManager.PortNumber { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] get; }
+        extern uint Microsoft.Search.Interop.ISearchManager.PortNumber { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] get; }*/
+        //public extern CSearchManagerClass();
+
     }
 }
 

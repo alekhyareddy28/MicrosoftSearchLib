@@ -4,7 +4,7 @@
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
 
-    [ComImport, ClassInterface((short) 0), Guid("B271E955-09E1-42E1-9B95-5994A534B613")]
+    [ClassInterface((short) 0), Guid("B271E955-09E1-42E1-9B95-5994A534B613")]
     public class CSearchQueryHelperClass : ISearchQueryHelper, CSearchQueryHelper
     {
         [return: MarshalAs(UnmanagedType.LPWStr)]
@@ -72,6 +72,8 @@
 
         [DispId(0x60010013)]
         extern int Microsoft.Search.Interop.ISearchQueryHelper.QueryMaxResults { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] get; [param: In] [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType=MethodCodeType.Runtime)] set; }
+
+        public extern CSearchQueryHelperClass();
     }
 }
 

@@ -4,7 +4,8 @@
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
 
-    [ComImport, Guid("C188CDBA-53E5-4767-9FFB-FAFBD8017DF0"), ClassInterface((short) 0)]
+    [ComImport]
+    [Guid("C188CDBA-53E5-4767-9FFB-FAFBD8017DF0"), ClassInterface((short) 0)]
     public class CEnumSearchRootsClass : IEnumSearchRoots, CEnumSearchRoots
     {
         [return: MarshalAs(UnmanagedType.Interface)]

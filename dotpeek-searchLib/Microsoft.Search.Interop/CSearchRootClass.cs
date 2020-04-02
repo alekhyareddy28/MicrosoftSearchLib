@@ -11,8 +11,8 @@ namespace Microsoft.Search.Interop
 {
   [TypeLibType(2)]
   [Guid("30766BD2-EA1C-4F28-BF27-0B44E2F68DB7")]
-  [ClassInterface(0)]
-  [ComImport]
+  [ClassInterface((ClassInterfaceType)0)]
+  
   public class CSearchRootClass : ISearchRoot, CSearchRoot
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

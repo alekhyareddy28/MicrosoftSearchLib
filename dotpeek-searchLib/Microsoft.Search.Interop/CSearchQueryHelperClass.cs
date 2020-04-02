@@ -9,9 +9,8 @@ using System.Runtime.InteropServices;
 
 namespace Microsoft.Search.Interop
 {
-  [ClassInterface(0)]
+  [ClassInterface((ClassInterfaceType)0)]
   [Guid("B271E955-09E1-42E1-9B95-5994A534B613")]
-  [ComImport]
   public class CSearchQueryHelperClass : ISearchQueryHelper, CSearchQueryHelper
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

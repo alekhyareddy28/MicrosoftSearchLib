@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 
 namespace Microsoft.Search.Interop
 {
-  [ClassInterface(0)]
+  [ClassInterface((ClassInterfaceType)0)]
   [Guid("A5270F6C-19EC-4E17-9EA1-A7074276B9B9")]
-  [ComImport]
+
   public class CSearchItemsChangedSinkClass : ISearchItemsChangedSink, CSearchItemsChangedSink
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

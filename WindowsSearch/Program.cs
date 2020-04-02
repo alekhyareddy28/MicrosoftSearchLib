@@ -10,6 +10,7 @@ using System.Data.OleDb;
 using System.Diagnostics;
 using System.Security.Permissions;
 using Microsoft.Search.Interop;
+
 [assembly: CLSCompliant(true)]
 //[assembly: OleDbPermission(SecurityAction.RequestMinimum, Unrestricted = true)]
 
@@ -44,16 +45,44 @@ namespace WindowsSearch
 
             // This uses the Microsoft.Search.Interop assembly
             CSearchManager manager = new CSearchManager();
-            String a = manager.ProxyName;
+            uint a = manager.PortNumber;
+            string b;
+            manager.GetIndexerVersionStr(out b);
+            string user = manager.UserAgent;
+
+            manager.UserAgent = "Test";
+
+            /*Console.WriteLine("Num " + a + " " + b + " "+ manager.UserAgent);
+            Console.ReadLine();*/
 
             // SystemIndex catalog is the default catalog in Windows
             ISearchCatalogManager catalogManager = manager.GetCatalog("SystemIndex");
+            string c = catalogManager.Name;
+            int d = catalogManager.NumberOfItems();
+            /*Console.WriteLine(c + " "+d);
+            Console.ReadLine();*/
 
             // Get the ISearchQueryHelper which will help us to translate AQS --> SQL necessary to query the indexer
             ISearchQueryHelper queryHelper = catalogManager.GetQueryHelper();
 
+            c = queryHelper.ConnectionString;
+
+            c = queryHelper.QuerySelectColumns;
+            queryHelper.QuerySelectColumns = "Hello";
+            d = queryHelper.QueryMaxResults;
+            /*Console.WriteLine(d);
+            Console.ReadLine();*/
+
             // Set the number of results we want. Don't set this property if all results are needed.
-            queryHelper.QueryMaxResults = 10000;
+            // queryHelper.QueryMaxResults = 10;
+            uint f = queryHelper.QueryKeywordLocale;
+
+            queryHelper.QueryKeywordLocale = 10;
+
+         /*   Console.WriteLine(f);
+            Console.ReadLine();*/
+
+
 
             // Set list of columns we want
             queryHelper.QuerySelectColumns = "System.ItemPathDisplay";

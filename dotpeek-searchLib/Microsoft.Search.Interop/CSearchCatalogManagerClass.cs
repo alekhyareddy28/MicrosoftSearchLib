@@ -12,8 +12,8 @@ namespace Microsoft.Search.Interop
 {
   [ComConversionLoss]
   [Guid("AAB49DD5-AD0B-40AE-B654-AE8976BF6BD2")]
-  [ClassInterface(0)]
-  [ComImport]
+  [ClassInterface((ClassInterfaceType)0)]
+
   public class CSearchCatalogManagerClass : ISearchCatalogManager, CSearchCatalogManager
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

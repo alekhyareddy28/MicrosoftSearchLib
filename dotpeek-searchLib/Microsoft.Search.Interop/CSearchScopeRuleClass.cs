@@ -10,9 +10,9 @@ using System.Runtime.InteropServices;
 namespace Microsoft.Search.Interop
 {
   [Guid("E63DE750-3BD7-4BE5-9C84-6B4281988C44")]
-  [ClassInterface(0)]
+  [ClassInterface((ClassInterfaceType)0)]
   [TypeLibType(2)]
-  [ComImport]
+  
   public class CSearchScopeRuleClass : ISearchScopeRule, CSearchScopeRule
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 
 namespace Microsoft.Search.Interop
 {
-  [ClassInterface(0)]
+  [ClassInterface((ClassInterfaceType)0)]
   [Guid("321069D2-2D7A-4AA1-9DC3-BA97CDF9AFB4")]
-  [ComImport]
+ 
   public class CSearchCrawlScopeManagerClass : ISearchCrawlScopeManager, CSearchCrawlScopeManager
   {
     [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]

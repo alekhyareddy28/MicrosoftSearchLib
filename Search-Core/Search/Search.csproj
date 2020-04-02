@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Microsoft.Search DLL\Core\MicrosoftSearchAPILib\MicrosoftSearchAPILib.csproj" />
+    <Reference Include="SearchCore">
+      <HintPath>..\..\dotpeek-searchLib\SearchCore\obj\x64\Release\netcoreapp3.1\SearchCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

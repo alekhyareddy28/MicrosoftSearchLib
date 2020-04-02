@@ -55,6 +55,10 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Search.Interop">
+      <HintPath>..\dotpeek-searchLib\Microsoft.Search.Interop\bin\Debug\Microsoft.Search.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -78,12 +82,6 @@
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\nugetexample.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Microsoft.Search DLL\Framework\SearchAPILib.csproj">
-      <Project>{d423057b-69de-4e26-ac09-86f890ef1d3b}</Project>
-      <Name>SearchAPILib</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
